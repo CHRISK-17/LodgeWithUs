@@ -3,4 +3,4 @@
 · Developed front-end using HTML, CSS, Bootstrap and JavaScript to provide users with rich and interactive content.\
 · Developed the back end with PHP and MySQL, maintaining relational databases on phpMyAdmin to accept and manage
 bookings.\
-· Built an integrated admin dashboard for streamlined CRUD operations on hotel reservations.\
+· Built an integrated admin dashboard for streamlined CRUD operations on hotel reservations.
