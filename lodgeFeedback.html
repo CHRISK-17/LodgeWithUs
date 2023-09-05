@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>LodgeWithUs Thank you & Feedback Page</title>
+        <link rel="stylesheet"; href="lodgeFeedback.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <nav class="nav">
+                    <a href="#" class="logo">LodgeWithUs</a>
+                    <div class="hamburger-menu">
+                        <i class="fa fa-bars"></i>
+                        <i class="fa fa-times"></i>
+                        <a href="login.html"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
+                        <a href="logout.php"><i class="fas fa-sign-out-alt" aria-hidden="true"></i></a>
+                    </div>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="home.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="lodgeRooms.html" class="nav-link">Rooms</a>
+                           </li>
+                    </ul>
+                </nav>
+            </div>   
+        </header>
+        <main>
+            <div class="contact-section">
+                <h1>Thank you!</h1>
+                <p style="text-align: center; color: white;font-size: 2.5em;"><em>Hope to see you soon!</em></p>
+                <div class="border"></div>
+                <form class="contact-form" action="lodgeFeedback.php" method="POST">
+                  <h2>Give Feedback</h2>
+                  <label>First Name</label>
+                  <input type="text" class="contact-form-text" placeholder="John" name="name" autofocus>
+                  <br>
+                  <label>Your Email</label>
+                  <input type="text" class="contact-form-text" placeholder="example@gmal.com" name="mail" tableindex="0">
+                  <br>
+                  <label>How could we improve our service?</label>
+                  <textarea class="contact-form-text" name="feedback" tableindex="1"></textarea>
+                  <input type="submit" class="contact-form-btn1" name="submit" tableindex="2">
+                  <input type="button" class="contact-form-btn2" value="Cancel Reservation" name="cancel" tableindex="3">
+                </form>
+              </div>              
+        </main>
+        <script type="text/javascript" src="lodgeScript.js"></script>
+        <footer>
+            <div class="wrapper">
+              <small>©2021 <strong>LodgeWithUs</strong>, All Rights Reserved</small>
+              <nav class="footer-nav">
+                <a href="#" class="gototop">Back to Top</a>
+                <a href="home.html">Home</a>
+                <a href="about.html">About Us</a>
+              </nav>
+            </div>
+        </footer>   
+    </body>
+</html>

@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+.container{
+    width: 100%;
+    max-width: 120rem;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+.header{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--blue-transparent);
+    z-index: 999;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    max-width: 80%;
+    font-size: 1.7em;
+    border: black;
+    font-weight: lighter;
+}
+
+.hamburger-menu{
+    font-size: 2.5rem;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    z-index: 1500;
+}
+
+.hamburger-menu .fa-times{
+    display: none;
+}
+
+.menu-open .hamburger-menu .fa-times{
+    display: block;
+}
+
+.menu-open .hamburger-menu .fa-bars{
+    display: none;
+}
+
+
+.nav-list{
+    display: flex;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--blue-light);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1400;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity .5s;
+}
+
+.menu-open .nav-list{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.nav-item:not(:last-child){
+    margin-bottom: .5rem;
+}
+
+.nav-link{
+    display: block;
+    color: white;
+    font-size: 3rem;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 1rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --dark-color: #0059b3;
+    --blue-solid: #1a8cff;
+    --blue-transparent: #b3d9ff;
+    --transparant-alt: rgba(17,53,255,0.15);
+    --blue-light: #80bfff;
+    --white-solid: #ffffff;
+    --gradient-color: linear-gradient(to right, var(--dark-color), var(--blue-light));
+    --gradient-alt: linear-gradient(to right, var(--blue-light), var(--blue-transparent));
+}
+html{
+    font-size: 12px;
+}
+
+body{
+    font-family: 'Josefin Sans', 'sans-serif';
+    font-size: 1.6rem;
+    color: var(--dark-color);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+main{
+    margin: 7ex 0 0;
+    font-family: "montserrat",sans-serif;
+}
+
+.contact-section{
+    background: url(bg.png) no-repeat center;
+    background-size: cover;
+    padding: 40px 0 85px 0;
+}
+
+.contact-section h1{
+    text-align: center;
+    color: #ddd;
+    padding: 7px 0 25px;
+}
+
+.contact-section h2{
+    text-align: center;
+    color: #ddd;
+    padding: 0 0 10px;
+}
+
+.contact-section label{
+    font-weight: bold;
+    text-align: center;
+    color: #ddd;
+    padding: 20px 0 20px 20px;
+}
+
+.paragraph{
+    display: inline;
+    width: 100%;
+    padding: 67ex;
+    color: #ddd;
+}
+
+.border{
+    width: 100px;
+    height: 10px;
+    background: var(--blue-light);
+    margin: 40px auto;
+}
+  
+.contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+  
+.contact-form-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: #111;
+    padding: 20px 40px;
+    outline: none;
+    color: #ddd;
+    transition: 0.5s;
+}
+
+.contact-form-text:focus{
+    box-shadow: 0 0 10px 4px #34495e;
+}
+
+textarea.contact-form-text{
+    resize: none;
+    height: 120px;
+}
+
+.contact-form-btn1{
+    font-weight: bold;
+    float: right;
+    border: 0;
+    background: var(--blue-light);
+    color: var(--dark-color);
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 10px 25px;
+}
+
+.contact-form-btn2{
+    font-weight: bold;
+    float: left;
+    border: 0;
+    background: var(--blue-light);
+    color: var(--dark-color);
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 10px 25px;
+}
+
+.contact-form-btn:hover{
+    background: #2980b9;
+}
+
+footer {
+    background: url('https://orange.codeberryschool.com/content/images/project-assets/simple-footer.png') repeat center;
+    display: table;
+    width: 100vw;
+    height: 8rem;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: .875rem;
+  }
+  
+  .wrapper {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  footer small {
+    color: #ccc;
+    letter-spacing: .025rem;
+    margin-bottom: 1.5rem;
+    display: block;
+  }
+  
+  .footer-nav a {
+    text-decoration: none;
+    color: #c74f78;
+    margin: 0 .5rem;
+    display: inline-block;
+  }
+  
+  .footer-nav a:hover {
+    color: #f26896;
+    transition: color .15s ease-in-out;
+  }
+  
+  strong {
+    font-weight: 700;
+  }
+
+  .gototop{
+    width: 70px;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+  }
+

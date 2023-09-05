@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>LodgeWithUs | Signup</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <link rel="stylesheet" href="loginstyles.css">
+    </head>
+    <body>
+        <header class="header">
+         <div class="container">
+             <nav class="nav">
+                 <a href="home.html" class="logo">LodgeWithUs</a>
+                 <div class="hamburger-menu">
+                    <i class="fa fa-bars"></i>
+                    <i class="fa fa-times"></i>
+                    <a href="login.html"><i class="fa fa-user-circle" aria-hidden="true"></i></a>
+                    <a href="logout.php"><i class="fas fa-sign-out-alt" aria-hidden="true"></i></a>
+                </div>
+                 <ul class="nav-list">
+                     <li class="nav-item">
+                         <a href="home.html" class="nav-link">Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a href="about.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="lodgeRooms.html" class="nav-link">Rooms</a>
+                    </li>
+                 </ul>
+             </nav>
+         </div>   
+        </header>
+        <main>
+        <div class="center">
+            <h1>Create Account</h1>
+            <form method="post">
+                <div class="txt_field">
+                    <input type="text" name="username" required>
+                    <span></span>
+                    <label>Username</label>
+                </div>
+                <div class="txt_field">
+                    <input type="text" name="email" required>
+                    <span></span>
+                    <label>email</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" name="password" required>
+                    <span></span>
+                    <label>Password</label>
+                </div>
+                <div class="pass"><a href="login.html">I have an account! Login</a></div>
+                <input type="submit" class="btn btn-gradient" value="Signup" style="text-align: center; margin-left: auto; margin-right: auto; padding-left: 6.5em;">
+            </form>
+        </div>
+        </main>
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>
